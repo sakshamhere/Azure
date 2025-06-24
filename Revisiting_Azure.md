@@ -224,3 +224,19 @@ A network virtual appliance (NVA) is a virtual appliance that consists of variou
 Network virtual appliances (NVAs) are virtual machines that control the flow of network traffic by controlling routing. You'll typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.You can deploy NVAs that you choose from providers in Azure Marketplace. Such providers include Cisco, Check Point, Barracuda, Sophos, WatchGuard, and SonicWall. You can use an NVA to filter traffic inbound to a virtual network, to block malicious requests, and to block requests made from unexpected resources.Your goal is to prevent unwanted or unsecured network traffic from reaching key systems.
 
 ![alt text](https://learn.microsoft.com/en-us/training/modules/control-network-traffic-flow-with-routes/media/4-nva.svg)
+
+
+
+**Azure Load Balancer**
+
+Azure Load Balancer is an Azure service that allows you to evenly distribute incoming network traffic across a group of Azure VMs, or across instances in a `Virtual Machine Scale Set`. Load Balancer delivers high availability and network performance in the following ways:
+- Load-balancing rules determine how traffic is distributed to instances that comprise the back end.
+- Health probes ensure the resources in the back end are healthy and that traffic isn't directed to unhealthy back-end instances.
+Load Balancer has several elements that work together to ensure an application's high availability and performance:
+- Front-end IP
+- Load balancer rules
+- Back-end pool
+- Health probes
+- Inbound NAT rules
+- High availability ports
+- Outbound rules
